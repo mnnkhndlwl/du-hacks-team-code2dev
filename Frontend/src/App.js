@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css';
 import Hero from './Hero/Hero';
+import Home from './components/Home/Home';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className="gradient-bg-welcome">
       <Routes>
             <Route path='/' element={<Hero />} />
+            <Route path='/home' element={<Home />} />
           </Routes>
       </div>
     </div>
