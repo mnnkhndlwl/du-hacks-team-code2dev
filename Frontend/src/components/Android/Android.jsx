@@ -3,7 +3,9 @@ import '../Physics/Work.scss';
 import { AiOutlineYoutube } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 import { urlFor, client } from '../../client';
-
+import home from "../../home.png";
+import { Link } from "react-router-dom";
+import "./fuck.css";
 
 const Android = () => {
 
@@ -40,7 +42,12 @@ const Android = () => {
   return (
     <>
     <div className="bg-sky-800">
-      <h2 className="head-text bg-sky-900">Here are your <span>resources</span></h2>
+    <div className="bg-sky-900 app__flex">
+    <Link to="/">
+    <img src={home} className="w-30 h-30 ml-5 p-3 head-text"/>
+    </Link>
+    <h2 className="head-text bg-sky-900">Here are your <span>resources</span></h2>
+    </div>
       
       <div className="app__work-filter">
         {['Video','Notes',].map((item,index) => (
@@ -60,7 +67,7 @@ const Android = () => {
         className="app__work-portfolio bg-sky-800"
       >
         {filterWork.map((work, index) => (
-          <div className="app__work-item app__flex" key={index}>
+          <div className="app__work-item app__flex adjust" key={index}>
             <div
               className="app__work-img app__flex"
             >
@@ -69,7 +76,7 @@ const Android = () => {
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
                 transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
-                className="app__work-hover app__flex "
+                className="app__work-hover app__flex h-20"
               >
                 {/* <a href={work.projectLink} target="_blank" rel="noreferrer">
 

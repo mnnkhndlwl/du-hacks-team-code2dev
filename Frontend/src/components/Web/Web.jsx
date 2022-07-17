@@ -3,7 +3,8 @@ import '../Physics/Work.scss';
 import { AiOutlineYoutube } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 import { urlFor, client } from '../../client';
-
+import home from "../../home.png";
+import { Link } from "react-router-dom";
 
 const Web = () => {
 
@@ -39,7 +40,12 @@ const Web = () => {
 
   return (
     <>
-      <h2 className="head-text bg-sky-900">Here are your <span>resources</span></h2>
+    <div className="bg-sky-900 app__flex">
+    <Link to="/">
+    <img src={home} className="w-30 h-30 ml-5 p-3 head-text"/>
+    </Link>
+    <h2 className="head-text bg-sky-900">Here are your <span>resources</span></h2>
+    </div>
 
       <div className="app__work-filter">
         {['All','Frontend','Backend',].map((item,index) => (
