@@ -13,6 +13,7 @@ import math from './math'
 import neet from './neet'
 import physics from './physics'
 import web from './webdev'
+import engineering from './engineering'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -20,7 +21,7 @@ export default createSchema({
   name: 'default',
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([android,chemistry,biology,dsa,home,jee,math,neet,physics,web
+  types: schemaTypes.concat([android,chemistry,biology,dsa,home,jee,math,neet,physics,web,engineering
     /* Your types here! */
   ]),
 })

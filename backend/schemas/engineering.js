@@ -1,10 +1,10 @@
 export default{
-    name:'home',
-    title:'Home',
+    name:'engineering',
+    title:'Engineering',
     type: 'document',
     fields:[
         {
-            name:'field',
+            name:'subject',
             title:'Title',
             type:'string'
         },
