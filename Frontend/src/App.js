@@ -5,6 +5,9 @@ import Home from './components/Home/Home';
 import Jee from './components/Jee/Jee';
 import Neet from './components/Neet/Neet';
 import Engineering from './components/Engineering/Engineering';
+import Physics from './components/Physics/Physics';
+import Web from './components/Web/Web';
+import Android from './components/Android/Android';
 
 function App() {
   return (
@@ -17,7 +20,10 @@ function App() {
             <Route exact path='/home' element={<Home />} />
             <Route exact path='/jee' element={<Jee />} />
             <Route exact path='/neet' element={<Neet />} />
-            <Route exact path='/engineering' element={<Engineering />} />
+            <Route exact path='/Coding&Development' element={<Engineering />} />
+            <Route exact path='/Physics' element={<Physics />} />
+            <Route exact path='/Web' element={<Web />} />
+            <Route exact path='/Android' element={<Android />} />
           </Routes>
       </div>
     </div>
