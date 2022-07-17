@@ -26,13 +26,13 @@ const Home = () => {
               whileInView={{ opacity: 1 }}
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.5, type: "tween" }}
-               className="app__profile-item"
+               className="app__profile-item w-50 h-100"
               key= {abouts.title + index}
             >
             <Link to={`/${data.field}`} >
               <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                 
-                <img src={urlFor(data.imgUrl)} alt={data.title} className="w-50 h-50"/>
+                <img src={urlFor(data.imgUrl)} alt={data.title} className="w-50 h-70"/>
                 
                 <div class="p-5">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-transform: uppercase">

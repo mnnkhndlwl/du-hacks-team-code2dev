@@ -8,6 +8,7 @@ import Engineering from './components/Engineering/Engineering';
 import Physics from './components/Physics/Physics';
 import Web from './components/Web/Web';
 import Android from './components/Android/Android';
+import DSA from './components/DSA/DSA';
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
             <Route exact path='/Coding&Development' element={<Engineering />} />
             <Route exact path='/Physics' element={<Physics />} />
             <Route exact path='/Web' element={<Web />} />
-            <Route exact path='/Android' element={<Android />} />
+            <Route exact path='/Andriod' element={<Android />} />
+            <Route exact path='/DSA' element={<DSA />} />
           </Routes>
       </div>
     </div>
